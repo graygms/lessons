@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div>
+        <ul>
+        <li><a href="index.html">lesson one</a></li>
+        <li><a href="functions.html">functions</a></li>
+        <li><a href="loops.html">loops</a></li>
+        <li><a href="object.html">objects</a></li>
+        <li><a  href="promises.html">promises</a></li>
+        <li><a href="async.html">async</a></li>
+     </ul>
+    </div>
+    <p id="demo"></p>
+    <script>
+var Myfunction= new Function("a","b","return a+b")
+var x=Myfunction(23,43);
+document.getElementById("demo").innerHTML=x
+    </script>
+<script>
+    const Myfunc=(a,b,c)=>{return a*b*c}
+    let product=Myfunc(2,4,6)
+    document.getElementById("demo").innerHTML=product
+</script>
+<script>
+    function*generateFunc(){
+        yield 1;
+        yield 2;
+        return 3;
+    }
+    let generator=generateFunc();
+    let one=generator.next();
+    alert(JSON.stringify(one));
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+
+   
+ body{
+    
+    background-image: url("../pics/landscape.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    
+ }
+/*nav bar */
+
+ul{
+
+    position:fixed;
+    background-color: black;
+    top: 0%;
+    width: 100%;
+
+}
+li{
+
+    list-style-type: none;
+float: left;
+}
+ a{
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    text-transform: lowercase;
+    display:block;
+    padding: 8px;
+    margin:4px;
+    background-color:#ddd ;
+}
+a:hover{
+    color: #fff;
+    background-color: #1f1fcb;
+    text-transform: uppercase;
+}
+ li img{
+    width: 27px;
+}
+li img:hover{
+    width: 40px;
+}
+
+@media only screen and (max-width: 418px){
+a{
+    font-size: 35%;
+}
+body{
+    background-size:100%;}
+
+
+}
+    

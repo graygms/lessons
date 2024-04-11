@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+</head>
+<body>
+    <h1>Objects</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <!-- <script>
+    var student={
+        name: "Graham",
+        age:62,
+        studies:"life",
+    };
+    document.getElementById("demo").innerHTML=student.name+" age "+student.age+" studying "+student.studies;
+    </script>
+    <script>
+        var student=new Object();
+        student.name="Barry",
+        student.age=21,
+        student.studies="life";
+        document.getElementById("demo1").innerHTML=student.name+" age "+student.age+" studying "+student.studies;
+
+    </script>*/-->
+    <script>
+        function stud(name,age,studies){
+            this.name=name;
+            this.age=age;
+            this.studies=studies;
+ }
+ var student= stud("Sally",16,"sex");
+ document.getElementById("demo").innerHTML=student.name+" age "+student.age+" studying "+student.studies;
+    </script>
+
+
+</body>
+</html>
